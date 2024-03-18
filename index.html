@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Map</title>
+  <link rel="stylesheet" type = "text/css" href="./style.css">
+  <script src = "./map.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+</head>
+
+
+<body>
+
+
+
+  <div class="main">
+    <img class="logo" src="./assets/images/Header.png" alt="New Jersey State Seal of Biliteracy logo">
+    <h1><span class="creative">New Jersey</span> State Seal of Biliteracy</h1>
+    <hr>
+    <p>The <a href="https://www.nj.gov/education/standards/worldlang/SealofBiliteracy.shtml">New Jersey State Seal of Biliteracy</a> is an award given by the New Jersey Department of Education (NJDOE) in recognition of students who have studied and attained proficiency in at least one language in addition to English by high school graduation. The State Seal of Biliteracy emphasizes the importance of multilingualism, which deepens intercultural communication and understanding across our personal and professional lives.</p>
+    <p>The NJDOE and Rutgers Graduate School of Education collaborate on promoting the Seal of Biliteracy. This website is designed to provide world language, ESL, and bilingual administrators and educators access to a network of colleagues and to leverage the expertise of other school districts to implement the State Seal of Biliteracy. Use the interactive map to locate participating districts and the assistance offered.  There is also a search function, where one can enter the topics listed below and a list of districts offering assistance on that topic will populate.</p>
+
+    <div class="left card">
+        <img class="tile-image" src="https://i.ibb.co/MpDsWbb/NJ-Seal-of-Biliteracy.jpg" alt="Seal of Biliteracy Stamp">
+        <h2 class="card-title">Seal of Biliteracy</h2>
+        <p class="card-text">Indicates school districts who participated in the Seal of Biliteracy for the 2022-2023 school year.</p>
+    </div>
+
+    <div class="right card">
+        <img class="tile-image" src="https://i.postimg.cc/G29CyKmr/Screenshot-2023-09-11-at-10-37-13-AM-removebg-preview.png" alt="Seal of Biliteracy Stamp with Red Circle">
+        <h2 class="card-title">Seal of Biliteracy with Red Circle</h2>
+        <p class="card-text">Indicates 2022-2023 participating school districts who have <strong>self-selected to serve as a resource to interested districts on a variety of topics and have provided contact information</strong>.</p>
+    </div>
+</div>
+
+
+  <br>
+
+  <div id="assistancelist">
+    <h2>Topics on which New Jersey School Districts<br>Are Offering Assistance:</h2>
+    <ul>
+      <li>Administering assessments and/or multiple assessments</li><li>Assessing students in multiple languages</li><li>Celebrating students</li><li>Equitable access</li><li>Establishing a testing schedule</li><li>Latin</li><li>Less commonly taught languages</li><li>Multilingual learner participation</li><li>Promotion and/or recruiting</li><li>Using Seal of Biliteracy data to inform curriculum and instructional programming</li><li>Using Seal of Biliteracy data to inform instruction</li><li>Writing keyboards for non-romanized alphabets</li>
+    </ul>
+    
+  </div>
+
+  <div class="content-wrapper">
+    <div class="left-content">
+        <div class="how-to-use">
+          
+          <p><h2>How to Use the Interactive Map</h2></h>
+
+            <ul>
+              <ul>
+                <li>To navigate the map, simply click and drag your cursor across it.</li>
+                <li>Zoom in and out using the + and - buttons located at the bottom right of the map.</li>
+                <li>Hover your mouse over any icon to display a box with information about the participating district.</li>
+            </ul>
+            
+          </p> 
+        </div>
+        
+   
+    <section class="container">
+      <h2>Search For Assistance By Topic</h2>
+      <form>
+        <i class="fas fa-search"></i>
+        <input type="text" id="search-item" placeholder="Search participating school districts for assistance" onkeyup="search()">
+      </form>
+      <div class="districts-list" id="districts-list">
+
+  <div class="districts-list" id="districts-list">
+    <div class="districts">
+      <img src="https://i.postimg.cc/G29CyKmr/Screenshot-2023-09-11-at-10-37-13-AM-removebg-preview.png">
+      <div class="d-details">
+        <h3>Atlantic County Institute of Technology</h3>
+        <h4>Contact: Michele Lockhart<br>Email: mlockhart@acitech.org<br>Offers assistance with:<br><ul><li>Using Seal of Biliteracy data to inform instruction</li><li>Using Seal of Biliteracy data to inform curriculum and instructional programming</li></ul></h4>
+      </div>
+    </div>
+
+    <div class="districts">
+      <img src="https://i.postimg.cc/G29CyKmr/Screenshot-2023-09-11-at-10-37-13-AM-removebg-preview.png">
+      <div class="d-details">
+        <h3>Barnegat Township School District</h3>
+        <h4>Contact: Krystina Ozello<br>Email: kozello@barnegatschools.com<br>Offers assistance with:<br><ul><li>Administering assessments and/or multiple assessments</li><li>Celebrating students</li></ul></h4>
+      </div>
+    </div>
+
+    <div class="districts">
+      <img src="https://i.postimg.cc/G29CyKmr/Screenshot-2023-09-11-at-10-37-13-AM-removebg-preview.png">
+      <div class="d-details">
+        <h3>Bernards Township School District</h3>
+        <h4>Contact: Katherine Stotler<br>Email: kstotler@bernardsboe.com<br>Offers assistance with:<br><ul><li>Promotion and/or recruiting</li><li>American Sign Language</li><li>Latin</li><li>Less commonly taught languages</li><li>Multilingual learner participation</li><li>Administering assessments and/or multiple assessments</li><li>Establishing a testing schedule</li><li>Celebrating students</li><li>Writing/keyboards for non-romanized alphabets</li><li>Assessing students in multiple languages</li></ul></h4>
+      </div>
+    </div>
+
+    <div class="districts">
+      <img src="https://i.postimg.cc/G29CyKmr/Screenshot-2023-09-11-at-10-37-13-AM-removebg-preview.png">
+      <div class="d-details">
+        <h3>Black Horse Pike Regional School District</h3>
+        <h4>Contact: Gail Shelly<br>Email: gshelly@bhprsd.org<br>Offers assistance with:<br><ul> <li>Promotion and/or recruiting</li><li>Administering assessments and/or multiple assessments</li><li>Establishing a testing schedule</li><li>Celebrating students,Using Seal of Biliteracy data to inform curriculum and instructional programming</li></ul></h4>
+      </div>
+    </div>
+
+    <div class="districts">
+      <img src="https://i.postimg.cc/G29CyKmr/Screenshot-2023-09-11-at-10-37-13-AM-removebg-preview.png">
+      <div class="d-details">
+        <h3>Butler Public Schools</h3>
+        <h4>Contact: Suzanne Greco<br>Email: sgreco@butlerboe.org<br>Offers assistance with:<br><ul><li>Administering assessments and/or multiple assessments</li><li>Establishing a testing schedule</li></ul></h4>
+      </div>
+    </div>
+
+    <div class="districts">
+      <img src="https://i.postimg.cc/G29CyKmr/Screenshot-2023-09-11-at-10-37-13-AM-removebg-preview.png">
+      <div class="d-details">
+        <h3>Camden County Technical Schools</h3>
+        <h4>Contact: Matt Ciociola<br>Email: mciociola@ccts.net<br>Offers assistance with:<br><ul><li>Promotion and/or recruiting</li><li>Establishing a testing schedule</li></ul></h4>
+      </div>
+    </div>
+
+    <div class="districts">
+      <img src="https://i.ibb.co/MpDsWbb/NJ-Seal-of-Biliteracy.jpg">
+      <div class="d-details">
+        <h3>Cherry Hill Public Schools</h3>
+        <h4>Contact: Nora Smaldore<br>Email: nsmaldore@chclc.org<br>Offers assistance with:<br><ul><li>Latin</li><li>Establishing a testing schedule</li></ul></h4>
+      </div>
+    </div>
+
+    <div class="districts">
+      <img src="https://i.postimg.cc/G29CyKmr/Screenshot-2023-09-11-at-10-37-13-AM-removebg-preview.png">
+      <div class="d-details">
+        <h3>Clifton Public School District</h3>
+        <h4>Contact: Maria Jaume-Aponte<br>Email: mjaume-aponte@cliftonschools.net<br>Offers assistance with:<br><ul><li>Promotion and/or recruiting</li><li>Equitable access</li><li>Less commonly taught languages</li><li>Multilingual learner participation</li><li>Administering assessments and/or multiple assessments</li><li>Establishing a testing schedule</li><li>Celebrating students</li><li>Using Seal of Biliteracy data to inform instruction</li><li>Using Seal of Biliteracy data to inform curriculum and instructional programming</li><li>Writing/keyboards for non-romanized alphabets</li><li>Assessing students in multiple languages</li></ul></h4>
+      </div>
+    </div>
+
+    <div class="districts">
+      <img src="https://i.postimg.cc/G29CyKmr/Screenshot-2023-09-11-at-10-37-13-AM-removebg-preview.png">
+      <div class="d-details">
+        <h3>Delaware Valley Regional High School District</h3>
+        <h4>Contact: Debra Billmann<br>Email: debrabillmann@dvrhs.k12.nj.us<br>Offers assistance with:<br><ul><li>Promotion and/or recruiting</li><li>Multilingual learner participation</li><li>Administering assessments and/or multiple assessments</li><li>Assessing students in multiple languages</li></ul></h4>
+      </div>
+    </div>
+
+    <div class="districts">
+      <img src="https://i.postimg.cc/G29CyKmr/Screenshot-2023-09-11-at-10-37-13-AM-removebg-preview.png">
+      <div class="d-details">
+        <h3>Dunellen Public Schools</h3>
+        <h4>Contact: Meagan Drapkin<br>Email: drapkinm@dunellenschools.org<br>Offers assistance with:<br><ul><li>Establishing a testing schedule</li></ul></h4>
+      </div>
+    </div>
+
+    <div class="districts">
+      <img src="https://i.postimg.cc/G29CyKmr/Screenshot-2023-09-11-at-10-37-13-AM-removebg-preview.png">
+      <div class="d-details">
+        <h3>East Orange School District</h3>
+        <h4>Contact: Denise Vega-Moore<br>Email: denise.vega-moore@eastorange.k12.nj.us<br>Offers assistance with:<br><ul><li>Promotion and/or recruiting</li><li>Celebrating students</li></ul></h4>
+      </div>
+    </div>
+
+    <div class="districts">
+      <img src="https://i.postimg.cc/G29CyKmr/Screenshot-2023-09-11-at-10-37-13-AM-removebg-preview.png">
+      <div class="d-details">
+        <h3>Eastern Camden County Regional School District</h3>
+        <h4>Contact: Dr. Robyn Clarke<br>Email: rclarke@eccrsd.us<br>Offers assistance with:<br><ul><li>Promotion and/or recruiting</li><li>Administering assessments and/or multiple assessments</li><li>Establishing a testing schedule</li></ul></h4>
+      </div>
+    </div>
+
+    <div class="districts">
+      <img src="https://i.postimg.cc/G29CyKmr/Screenshot-2023-09-11-at-10-37-13-AM-removebg-preview.png">
+      <div class="d-details">
+        <h3>Egg Harbor Township School Distric</h3>
+        <h4>Contact: Michele Schreiner<br>Email: schreinm@eht.k12.nj.us<br>Offers assistance with:<br><ul><li>Promotion and/or recruiting</li><li>Equitable access</li><li>Latin</li><li>Less commonly taught languages</li> <li>Multilingual learner participation</li><li>Administering assessments and/or multiple assessments</li><li>Establishing a testing schedule</li><li>Celebrating students</li><li>Using Seal of Biliteracy data to inform instruction</li><li>Using Seal of Biliteracy data to inform curriculum and instructional programming</li><li>Writing/keyboards for non-romanized alphabets</li><li>Assessing students in multiple languages</li></ul></h4>
+      </div>
+    </div>
+
+    <div class="districts">
+      <img src="https://i.postimg.cc/G29CyKmr/Screenshot-2023-09-11-at-10-37-13-AM-removebg-preview.png">
+      <div class="d-details">
+        <h3>Essex County Schools of Technology</h3>
+        <h4>Contact: Anibal Ponce<br>Email: aponce@essextech.org<br>Offers assistance with:<br><ul><li>Promotion and/or recruiting</li><li>Equitable access</li><li>Administering assessments and/or multiple assessments</li><li>Establishing a testing schedule</li><li>Celebrating students</li></ul></h4>
+      </div>
+    </div>
+
+    <div class="districts">
+      <img src="https://i.postimg.cc/G29CyKmr/Screenshot-2023-09-11-at-10-37-13-AM-removebg-preview.png">
+      <div class="d-details">
+        <h3>Fair Lawn Public Schools</h3>
+        <h4>Contact: Liliana Lopez<br>Email: llopez@fairlawnschools.org<br>Offers assistance with:<br><ul><li>Promotion and/or recruiting</li><li>Equitable access</li><li>Less commonly taught languages</li><li>Multilingual learner participation</li><li>Administering assessments and/or multiple assessments</li><li>Establishing a testing schedule</li><li>Celebrating students</li><li>Using Seal of Biliteracy data to inform instruction</li><li>Writing/keyboards for non-romanized alphabets</li><li>Assessing students in multiple languages</li></ul></h4>
+      </div>
+    </div>
+
+    <div class="districts">
+      <img src="https://i.postimg.cc/G29CyKmr/Screenshot-2023-09-11-at-10-37-13-AM-removebg-preview.png">
+      <div class="d-details">
+        <h3>Freehold Regional High School District</h3>
+        <h4>Contact: Shanna Howell<br>Email: Showell@frhsd.com<br>Offers assistance with:<br><ul><li>Promotion and/or recruiting</li></ul></h4>
+      </div>
+    </div>
+
+    <div class="districts">
+      <img src="https://i.postimg.cc/G29CyKmr/Screenshot-2023-09-11-at-10-37-13-AM-removebg-preview.png">
+      <div class="d-details">
+        <h3>Glen Ridge Public Schools</h3>
+        <h4>Contact: John Lawlor<br>Email: jlawlor@glenridge.org<br>Offers assistance with:<br><ul><li>Administering assessments and/or multiple assessments</li><li>Establishing a testing schedule</li><li>Celebrating students</li></ul></h4>
+      </div>
+    </div>
+
+    <div class="districts">
+      <img src="https://i.postimg.cc/G29CyKmr/Screenshot-2023-09-11-at-10-37-13-AM-removebg-preview.png">
+      <div class="d-details">
+        <h3>Greater Egg Harbor Regional High School District</h3>
+        <h4>Contact: Jennifer Rushton<br>Email: jrushton@gehrhsd.net<br>Offers assistance with:<br><ul><li>Using Seal of Biliteracy data to inform curriculum and instructional programming</li></ul></h4>
+      </div>
+    </div>
+
+    <div class="districts">
+      <img src="https://i.postimg.cc/G29CyKmr/Screenshot-2023-09-11-at-10-37-13-AM-removebg-preview.png">
+      <div class="d-details">
+        <h3>Haddonfield School District</h3>
+        <h4>Contact: Daniel Licata<br>Email: dlicata@haddonfield.k12.nj.us<br>Offers assistance with:<br><ul><li>Promotion and/or recruiting</li><li>Equitable access</li><li>Administering assessments and/or multiple assessments</li><li>Establishing a testing schedule</li><li>Assessing students in multiple languages</li></ul></h4>
+      </div>
+    </div>      
+
+    <div class="districts">
+      <img src="https://i.postimg.cc/G29CyKmr/Screenshot-2023-09-11-at-10-37-13-AM-removebg-preview.png">
+      <div class="d-details">
+        <h3>Harrison Public Schools</h3>
+        <h4>Contact: Matt Weber<br>Email: matthew.weber@staff.harrisonschools.org<br>Offers assistance with:<br><ul><li>Promotion and/or recruiting</li><li>Administering assessments and/or multiple assessments</li><li>Establishing a testing schedule</li><li>Using Seal of Biliteracy data to inform instruction</li><li>Using Seal of Biliteracy data to inform curriculum and instructional programming</li><li>Assessing students in multiple languages</li></ul></h4>
+      </div>
+    </div>
+
+    <div class="districts">
+      <img src="https://i.postimg.cc/G29CyKmr/Screenshot-2023-09-11-at-10-37-13-AM-removebg-preview.png">
+      <div class="d-details">
+        <h3>High Point Regional School District</h3>
+        <h4>Contact: Jacqueline McCarthy<br>Email: jmccarthy@hpregional.org<br>Offers assistance with:<br><ul><li>Administering assessments and/or multiple assessments</li><li>Establishing a testing schedule</li><li>Celebrating students</li><li>Using Seal of Biliteracy data to inform instruction</li><li>Using Seal of Biliteracy data to inform curriculum and instructional programming</li></ul></h4>
+      </div>
+    </div>
+
+    <div class="districts">
+      <img src="https://i.postimg.cc/G29CyKmr/Screenshot-2023-09-11-at-10-37-13-AM-removebg-preview.png">
+      <div class="d-details">
+        <h3>Hillsborough Township Public Schools</h3>
+        <h4>Contact: Roberto Lugo<br>Email: rlugo@htps.us<br>Offers assistance with:<br><ul><li>Administering assessments and/or multiple assessments</li><li>Establishing a testing schedule</li><li>Celebrating students</li></ul></h4>
+      </div>
+    </div>
+
+    <div class="districts">
+      <img src="https://i.postimg.cc/G29CyKmr/Screenshot-2023-09-11-at-10-37-13-AM-removebg-preview.png">
+      <div class="d-details">
+        <h3>Hopatcong Borough Schools</h3>
+        <h4>Contact: Stephanie Martinez<br>Email: smartinez@hopatcongschools.org<br>Offers assistance with:<br><ul><li>Administering assessments and/or multiple assessments</li><li>Establishing a testing schedule</li><li>Celebrating students</li><li>Using Seal of Biliteracy data to inform curriculum and instructional programming</li></ul></h4>
+      </div>
+    </div>
+
+    <div class="districts">
+      <img src="https://i.postimg.cc/G29CyKmr/Screenshot-2023-09-11-at-10-37-13-AM-removebg-preview.png">
+      <div class="d-details">
+        <h3>Irvington Public Schools</h3>
+        <h4>Contact: Pedro Ruiz<br>Email: pruiz@irvington.k12.nj.us<br>Offers assistance with:<br><ul><li>Multilingual learner participation</li><li>Administering assessments and/or multiple assessments</li><li>Establishing a testing schedule</li><li>Celebrating students</li><li>Assessing students in multiple languages</li></ul></h4>
+      </div>
+    </div>
+
+    <div class="districts">
+        <img src="https://i.postimg.cc/G29CyKmr/Screenshot-2023-09-11-at-10-37-13-AM-removebg-preview.png">
+        <div class="d-details">
+          <h3>Kingsway Regional School District</h3>
+          <h4>Contact: Rachael Anderson<br>Email: andersonr@krsd.us<br>Offers assistance with:<br><ul> <li>Multilingual learner participation</li><li>Establishing a testing schedule</li> </ul></h4>
+        </div>
+    </div>
+
+    <div class="districts">
+        <img src="https://i.postimg.cc/G29CyKmr/Screenshot-2023-09-11-at-10-37-13-AM-removebg-preview.png">
+        <div class="d-details">
+          <h3>LEAP Academy University Charter School</h3>
+          <h4>Contact: Tugba Hoguet<br>Email: Tugba@leap.rutgers.edu<br>Offers assistance with:<br><ul><li>Equitable access</li><li>Multilingual learner participation</li><li>Establishing a testing schedule</li><li>Celebrating students</li></ul></h4>
+        </div>
+     </div>
+
+     <div class="districts">
+      <img src="https://i.postimg.cc/G29CyKmr/Screenshot-2023-09-11-at-10-37-13-AM-removebg-preview.png">
+      <div class="d-details">
+        <h3>Lenape Regional High School District</h3>
+        <h4>Contact: Shannon Bretz<br>Email: sbretz@lrhsd.org<br>Offers assistance with:<br><ul><li>Administering assessments and/or multiple assessments</li><li>Establishing a testing schedule</li><li>Celebrating students</li></ul></h4>
+      </div>
+    </div>
+
+    <div class="districts">
+      <img src="https://i.postimg.cc/G29CyKmr/Screenshot-2023-09-11-at-10-37-13-AM-removebg-preview.png">
+      <div class="d-details">
+        <h3>Livingston Public Schools</h3>
+        <h4>Contact: Alexandra Marzulla<br>Email: amarzulla@livingston.org<br>Offers assistance with:<br><ul><li>Administering assessments and/or multiple assessments</li><li>Establishing a testing schedule</li></ul></h4>
+      </div>
+    </div>
+
+    <div class="districts">
+      <img src="https://i.postimg.cc/G29CyKmr/Screenshot-2023-09-11-at-10-37-13-AM-removebg-preview.png">
+      <div class="d-details">
+        <h3>Madison Public Schools</h3>
+        <h4>Contact: Christine Internicola<br>Email: internicolac@madisonnjps.org<br>Offers assistance with:<br><ul><li>Administering assessments and/or multiple assessments</li><li>Establishing a testing schedule</li><li>Celebrating students</li></ul></h4>
+      </div>
+    </div>
+  
+    <div class="districts">
+          <img src="https://i.postimg.cc/G29CyKmr/Screenshot-2023-09-11-at-10-37-13-AM-removebg-preview.png">
+          <div class="d-details">
+            <h3>Mahwah Township Public Schools</h3>
+            <h4>Contact: Courtney Carrelha<br>Email: Ccarrelha@mahwah.k12.nj.us<br>Offers assistance with:<br><ul> <li>Administering assessments and/or multiple assessments</li></ul></h4>
+          </div>
+    </div>
+
+    <div class="districts">
+      <img src="https://i.postimg.cc/G29CyKmr/Screenshot-2023-09-11-at-10-37-13-AM-removebg-preview.png">
+      <div class="d-details">
+        <h3>Manchester Regional Choice District</h3>
+        <h4>Contact: Jonathan Banta<br>Email: JBanta@mrhs.net<br>Offers assistance with:<br><ul><li>Promotion and/or recruiting</li><li>Multilingual learner participation</li><li>Administering assessments and/or multiple assessments</li><li>Establishing a testing schedule</li><li>Celebrating students</li><li>Using Seal of Biliteracy data to inform instruction</li><li>Writing/keyboards for non-romanized alphabets</li></ul></h4>
+      </div>
+    </div>
+
+    <div class="districts">
+      <img src="https://i.postimg.cc/G29CyKmr/Screenshot-2023-09-11-at-10-37-13-AM-removebg-preview.png">
+      <div class="d-details">
+        <h3>Metuchen School District</h3>
+        <h4>Contact: Ashley Jaye<br>Email: ajaye@metboe.k12.nj.us<br>Offers assistance with:<br><ul><li>Promotion and/or recruiting</li></ul></h4>
+      </div>
+    </div>
+      
+    <div class="districts">
+      <img src="https://i.postimg.cc/G29CyKmr/Screenshot-2023-09-11-at-10-37-13-AM-removebg-preview.png">
+      <div class="d-details">
+        <h3>Monmouth County Vocational School District</h3>
+        <h4>Contact: Kelly Harmon<br>Email: kharmon@ctemc.org<br>Offers assistance with:<br><ul><li>Promotion and/or recruiting</li><li>Administering assessments and/or multiple assessments</li><li>Establishing a testing schedule</li><li>Celebrating students</li><li>Using Seal of Biliteracy data to inform instruction</li><li>Using Seal of Biliteracy data to inform curriculum and instructional programming</li></ul></h4>
+      </div>
+    </div>
+
+    <div class="districts">
+      <img src="https://i.postimg.cc/G29CyKmr/Screenshot-2023-09-11-at-10-37-13-AM-removebg-preview.png">
+      <div class="d-details">
+        <h3>Monmouth Regional High School District</h3>
+        <h4>Contact: Victoria Mercogliano<br>Email: vmercogliano@monmouthregional.net<br>Offers assistance with:<br><ul> <li>Promotion and/or recruiting</li><li>Administering assessments and/or multiple assessments</li><li>Establishing a testing schedule</li></ul></h4>
+      </div>
+    </div>
+
+    <div class="districts">
+      <img src="https://i.postimg.cc/G29CyKmr/Screenshot-2023-09-11-at-10-37-13-AM-removebg-preview.png">
+      <div class="d-details">
+        <h3>Monroe Township Public Schools</h3>
+        <h4>Contact: Steven Carey<br>Email: scarey@monroetwp.k12.nj.us<br>Offers assistance with:<br><ul> <li>Promotion and/or recruiting</li><li>Promotion and/or recruiting</li><li>Equitable access</li><li>Multilingual learner participation</li></ul></h4>
+      </div>
+    </div>
+
+    <div class="districts">
+      <img src="https://i.postimg.cc/G29CyKmr/Screenshot-2023-09-11-at-10-37-13-AM-removebg-preview.png">
+      <div class="d-details">
+        <h3>Monroe Township School District</h3>
+        <h4>Contact: Kelly Roselle<br>Email: kelly.roselle@monroe.k12.nj.us<br>Offers assistance with:<br><ul><li>Promotion and/or recruiting</li><li>Multilingual learner participation</li></ul></h4>
+      </div>
+    </div>
+
+
+    <div class="districts">
+      <img src="https://i.postimg.cc/G29CyKmr/Screenshot-2023-09-11-at-10-37-13-AM-removebg-preview.png">
+      <div class="d-details">
+        <h3>Montville Township Public Schools</h3>
+        <h4>Contact: Tamar Spitzer<br>Email: tamar.spitzer@montville.net<br>Offers assistance with:<br><ul><li>Administering assessments and/or multiple assessments</li><li>Establishing a testing schedule</li><li>Celebrating students</li><li>Assessing students in multiple languages</li></ul></h4>
+      </div>
+    </div>
+
+    <div class="districts">
+      <img src="https://i.postimg.cc/G29CyKmr/Screenshot-2023-09-11-at-10-37-13-AM-removebg-preview.png">
+      <div class="d-details">
+        <h3>Morris School District</h3>
+        <h4>Contact: Marietta Scorsune<br>Email: marietta.scorsune@msdk12.net<br>Offers assistance with:<br><ul><li>Promotion and/or recruiting</li><li>Administering assessments and/or multiple assessments</li></ul></h4>
+      </div>
+    </div>
+
+    <div class="districts">
+      <img src="https://i.postimg.cc/G29CyKmr/Screenshot-2023-09-11-at-10-37-13-AM-removebg-preview.png">
+      <div class="d-details">
+        <h3>New Brunswick Public Schools</h3>
+        <h4>Contact: Marisa Santos<br>Email: marisa_santos@nbpsnj.net<br>Offers assistance with:<br><ul><li>Promotion and/or recruiting</li><li>Multilingual learner participation</li><li>Establishing a testing schedule</li><li>Celebrating students</li></ul></h4>
+      </div>
+    </div>
+
+    <div class="districts">
+      <img src="https://i.postimg.cc/G29CyKmr/Screenshot-2023-09-11-at-10-37-13-AM-removebg-preview.png">
+      <div class="d-details">
+        <h3>North Brunswick Township Schools</h3>
+        <h4>Contact: Yesenia Morales<br>Email: ymorales@nbtschools.org<br>Offers assistance with:<br><ul><li>Equitable access</li><li>Establishing a testing schedule</li><li>Celebrating students</li></ul></h4>
+      </div>
+    </div>
+
+    <div class="districts">
+      <img src="https://i.postimg.cc/G29CyKmr/Screenshot-2023-09-11-at-10-37-13-AM-removebg-preview.png">
+      <div class="d-details">
+        <h3>North Plainfield School District</h3>
+        <h4>Contact: Regina Acevedo<br>Email: regina_acevedo@nplainfield.org<br>Offers assistance with:<br><ul><li>Promotion and/or recruiting</li><li>Equitable access</li><li>Multilingual learner participation</li><li>Administering assessments and/or multiple assessments</li><li>Establishing a testing schedule</li><li>Celebrating students</li></ul></h4>
+      </div>
+    </div>
+
+    <div class="districts">
+      <img src="https://i.postimg.cc/G29CyKmr/Screenshot-2023-09-11-at-10-37-13-AM-removebg-preview.png">
+      <div class="d-details">
+        <h3>Northern Highlands Regional School District</h3>
+        <h4>Contact: Susan Spencer<br>Email: spencers@northernhighlands.org<br>Offers assistance with:<br><ul><li>Promotion and/or recruiting</li><li>Multilingual learner participation</li><li>Administering assessments and/or multiple assessments</li><li>Establishing a testing schedule</li><li>Celebrating students</li><li>Assessing students in multiple languages</li></ul></h4>
+      </div>
+    </div>
+
+    <div class="districts">
+      <img src="https://i.postimg.cc/G29CyKmr/Screenshot-2023-09-11-at-10-37-13-AM-removebg-preview.png">
+      <div class="d-details">
+        <h3>Old Bridge Township Public Schools</h3>
+        <h4>Contact: Anahita Keiller<br>Email: akeiller@obps.org<br>Offers assistance with:<br><ul><li>Promotion and/or recruiting</li><li>Equitable access</li><li>Less commonly taught languages</li><li>Multilingual learner participation</li><li>Administering assessments and/or multiple assessments</li><li>Establishing a testing schedule</li><li>Celebrating students</li><li>Using Seal of Biliteracy data to inform instruction</li><li>Using Seal of Biliteracy data to inform curriculum and instructional programming</li><li>Writing/keyboards for non-romanized alphabets</li><li>Assessing students in multiple languages</li></ul></h4>
+      </div>
+    </div>
+
+    <div class="districts">
+      <img src="https://i.postimg.cc/G29CyKmr/Screenshot-2023-09-11-at-10-37-13-AM-removebg-preview.png">
+      <div class="d-details">
+        <h3>Paramus Public Schools</h3>
+        <h4>Contact: Melissa Quackenbush<br>Email: mquackenbush@paramusschools.org<br>Offers assistance with:<br><ul><li>Establishing a testing schedule</li><li>Celebrating students</li><li>Assessing students in multiple languages</li></ul></h4>
+      </div>
+    </div>
+
+    <div class="districts">
+      <img src="https://i.postimg.cc/G29CyKmr/Screenshot-2023-09-11-at-10-37-13-AM-removebg-preview.png">
+      <div class="d-details">
+        <h3>Pequannock Township School District</h3>
+        <h4>Contact: Elizabeth Sheridan<br>Email: elizabeth.sheridan@pequannock.org<br>Offers assistance with:<br><ul><li>Establishing a testing schedule</li></ul></h4>
+      </div>
+    </div>
+
+    <div class="districts">
+      <img src="https://i.postimg.cc/G29CyKmr/Screenshot-2023-09-11-at-10-37-13-AM-removebg-preview.png">
+      <div class="d-details">
+        <h3>Piscataway Township Schools</h3>
+        <h4>Contact: Glennysha Jurado-Moran<br>Email: gjurado-moran@pway.org<br>Offers assistance with:<br><ul><li>Celebrating students</li></ul></h4>
+      </div>
+    </div>
+
+    <div class="districts">
+      <img src="https://i.postimg.cc/G29CyKmr/Screenshot-2023-09-11-at-10-37-13-AM-removebg-preview.png">
+      <div class="d-details">
+        <h3>Rahway Public Schools</h3>
+        <h4>Contact: Jasmine Akauola<br>Email: jakauola@rahway.net<br>Offers assistance with:<br><ul><li>Promotion and/or recruiting</li><li>Equitable access</li><li>Multilingual learner participation</li><li>Celebrating students</li><li>Using Seal of Biliteracy data to inform instruction</li></ul></h4>
+      </div>
+    </div>
+
+
+    <div class="districts">
+      <img src="https://i.postimg.cc/G29CyKmr/Screenshot-2023-09-11-at-10-37-13-AM-removebg-preview.png">
+      <div class="d-details">
+        <h3>Ramsey School District</h3>
+        <h4>Contact: Brennan Heffernan<br>Email: bheffernan@ramsey.k12.nj.us<br>Offers assistance with:<br><ul><li>Administering assessments and/or multiple assessments</li><li>Establishing a testing schedule</li></ul></h4>
+      </div>
+    </div>
+
+    <div class="districts">
+      <img src="https://i.postimg.cc/G29CyKmr/Screenshot-2023-09-11-at-10-37-13-AM-removebg-preview.png">
+      <div class="d-details">
+        <h3>Roxbury Public Schools</h3>
+        <h4>Contact: Matt Trokan<br>Email: mtrokan@roxbury.org<br>Offers assistance with:<br><ul><li>Multilingual learner participation</li><li>Administering assessments and/or multiple assessments</li><li>Establishing a testing schedule</li><li>Celebrating students</li><li>Using Seal of Biliteracy data to inform instruction</li><li>Using Seal of Biliteracy data to inform curriculum and instructional programming</li><li>Assessing students in multiple languages</li></ul></h4>
+      </div>
+    </div>
+
+    <div class="districts">
+      <img src="https://i.postimg.cc/G29CyKmr/Screenshot-2023-09-11-at-10-37-13-AM-removebg-preview.png">
+      <div class="d-details">
+        <h3>Saddle Brook School District</h3>
+        <h4>Contact: Nicole De Bonis<br>Email: ndebonis@sbpsnj.org<br>Offers assistance with:<br><ul><li>Multilingual learner participation</li><li>Administering assessments and/or multiple assessments</li><li>Celebrating students</li></ul></h4>
+      </div>
+    </div>
+
+    <div class="districts">
+      <img src="https://i.postimg.cc/G29CyKmr/Screenshot-2023-09-11-at-10-37-13-AM-removebg-preview.png">
+      <div class="d-details">
+        <h3>School District of the Chathams</h3>
+        <h4>Contact: Lauren Spooner<br>Email: lspooner@chatham-nj.org<br>Offers assistance with:<br><ul><li>Administering assessments and/or multiple assessments</li><li>Establishing a testing schedule</li></ul></h4>
+      </div>
+    </div>
+
+    <div class="districts">
+      <img src="https://i.postimg.cc/G29CyKmr/Screenshot-2023-09-11-at-10-37-13-AM-removebg-preview.png">
+      <div class="d-details">
+        <h3>Scotch Plains-Fanwood Public Schools</h3>
+        <h4>Contact: Lisa Howard<br>Email: LHoward@spfk12.org<br>Offers assistance with:<br><ul><li>Promotion and/or recruiting</li><li>Equitable access</li><li>Administering assessments and/or multiple assessments</li><li>Establishing a testing schedule</li><li>Celebrating students</li><li>Assessing students in multiple languages</li></ul></h4>
+      </div>
+    </div>
+
+    <div class="districts">
+      <img src="https://i.postimg.cc/G29CyKmr/Screenshot-2023-09-11-at-10-37-13-AM-removebg-preview.png">
+      <div class="d-details">
+        <h3>Secaucus Public School District</h3>
+        <h4>Contact: Christina Wiswesser <br>Email: Cwiswesser@sboe.org<br>Offers assistance with:<br><ul><li>Administering assessments and/or multiple assessments</li><li>Establishing a testing schedule</li><li>Celebrating students</li></ul></h4>
+      </div>
+    </div>
+
+
+    <div class="districts">
+      <img src="https://i.postimg.cc/G29CyKmr/Screenshot-2023-09-11-at-10-37-13-AM-removebg-preview.png">
+      <div class="d-details">
+        <h3>Shore Regional High School District</h3>
+        <h4>Contact: Ellen Minze<br>Email: eminze@shoreregional.org<br>Offers assistance with:<br><ul><li>Administering assessments and/or multiple assessments</li><li>Establishing a testing schedule</li><li>Celebrating students</li></ul></h4>
+      </div>
+    </div>
+
+    <div class="districts">
+      <img src="https://i.postimg.cc/G29CyKmr/Screenshot-2023-09-11-at-10-37-13-AM-removebg-preview.png">
+      <div class="d-details">
+        <h3>South River Public Schools</h3>
+        <h4>Contact: Gabriela Colon<br>Email: gcolon@srivernj.org<br>Offers assistance with:<br><ul><li>Promotion and/or recruiting</li></ul></h4>
+      </div>
+    </div>
+
+    <div class="districts">
+      <img src="https://i.postimg.cc/G29CyKmr/Screenshot-2023-09-11-at-10-37-13-AM-removebg-preview.png">
+      <div class="d-details">
+        <h3>Sparta Township Public Schools</h3>
+        <h4>Contact: Andrew Buchanan<br>Email: andrew.buchanan@sparta.org<br>Offers assistance with:<br><ul><li>Promotion and/or recruiting</li><li>Equitable access</li><li>Less commonly taught languages</li><li>Multilingual learner participation</li><li>Administering assessments and/or multiple assessments</li><li>Establishing a testing schedule</li><li>Celebrating students</li><li>Using Seal of Biliteracy data to inform instruction</li><li>Writing/keyboards for non-romanized alphabets</li><li>Assessing students in multiple languages</li></ul></h4>
+      </div>
+    </div>
+
+    <div class="districts">
+      <img src="https://i.postimg.cc/G29CyKmr/Screenshot-2023-09-11-at-10-37-13-AM-removebg-preview.png">
+      <div class="d-details">
+        <h3>Spotswood Public Schools</h3>
+        <h4>Contact: Lauren Buchanan<br>Email: lbuchanan@spsd.us<br>Offers assistance with:<br><ul><li>Promotion and/or recruiting</li><li>Establishing a testing schedule</li><li>Celebrating students</li></ul></h4>
+      </div>
+    </div>
+
+    <div class="districts">
+      <img src="https://i.postimg.cc/G29CyKmr/Screenshot-2023-09-11-at-10-37-13-AM-removebg-preview.png">
+      <div class="d-details">
+        <h3>Teaneck Public Schools</h3>
+        <h4>Contact: Justin O'Neill<br>Email: joneill@teaneckschools.org<br>Offers assistance with:<br><ul><li>Administering assessments and/or multiple assessments</li><li>Celebrating students</li></ul></h4>
+      </div>
+    </div>
+
+    <div class="districts">
+      <img src="https://i.postimg.cc/G29CyKmr/Screenshot-2023-09-11-at-10-37-13-AM-removebg-preview.png">
+      <div class="d-details">
+        <h3>Tenafly Public Schools</h3>
+        <h4>Contact: Elizabeth Giblin<br>Email: egiblin@tenafly.k12.nj.us<br>Offers assistance with:<br><ul><li>Multilingual learner participation</li><li>Establishing a testing schedule</li></ul></h4>
+      </div>
+    </div>
+
+    <div class="districts">
+      <img src="https://i.postimg.cc/G29CyKmr/Screenshot-2023-09-11-at-10-37-13-AM-removebg-preview.png">
+      <div class="d-details">
+        <h3>Toms River Regional School District</h3>
+        <h4>Contact: Ann C Gural<br>Email: agural@trschools.com<br>Offers assistance with:<br><ul><li>Promotion and/or recruiting</li><li>Equitable access</li><li>Less commonly taught languages</li><li>Multilingual learner participation</li><li>Celebrating students</li></ul></h4>
+      </div>
+    </div>
+
+    <div class="districts">
+      <img src="https://i.postimg.cc/G29CyKmr/Screenshot-2023-09-11-at-10-37-13-AM-removebg-preview.png">
+      <div class="d-details">
+        <h3>Verona Public Schools</h3>
+        <h4>Contact: Julia Peter<br>Email: jpeter@veronaschools.org<br>Offers assistance with:<br><ul><li>Administering assessments and/or multiple assessments</li><li>Establishing a testing schedule</li></ul></h4>
+      </div>
+    </div>
+
+    <div class="districts">
+      <img src="https://i.postimg.cc/G29CyKmr/Screenshot-2023-09-11-at-10-37-13-AM-removebg-preview.png">
+      <div class="d-details">
+        <h3>Vineland Public Schools</h3>
+        <h4>Contact: JoAnne Negrin<br>Email: jnegrin@vineland.org<br>Offers assistance with:<br><ul><li>Promotion and/or recruiting</li><li>Equitable access</li><li>Multilingual learner participation</li><li>Administering assessments and/or multiple assessments</li><li>Establishing a testing schedule</li><li>Using Seal of Biliteracy data to inform instruction</li><li>Using Seal of Biliteracy data to inform curriculum and instructional programming</li><li>Assessing students in multiple languages</li></ul></h4>
+      </div>
+    </div>
+
+    <div class="districts">
+      <img src="https://i.postimg.cc/G29CyKmr/Screenshot-2023-09-11-at-10-37-13-AM-removebg-preview.png">
+      <div class="d-details">
+        <h3>Washington Township School District</h3>
+        <h4>Contact: Kayla Berry<br>Email: kberry@wtps.org<br>Offers assistance with:<br><ul><li>Promotion and/or recruiting</li><li>Administering assessments and/or multiple assessments</li><li>Establishing a testing schedule</li><li>Celebrating students</li><li>Using Seal of Biliteracy data to inform instruction</li></ul></h4>
+      </div>
+    </div>
+
+    <div class="districts">
+      <img src="https://i.postimg.cc/G29CyKmr/Screenshot-2023-09-11-at-10-37-13-AM-removebg-preview.png">
+      <div class="d-details">
+        <h3>West Windsor-Plainsboro Regional School District</h3>
+        <h4>Contact: Ashley Warren<br>Email: Ashley.Warren@wwprsd.org<br>Offers assistance with:<br><ul><li>Equitable access</li><li>Using Seal of Biliteracy data to inform instruction</li><li>Using Seal of Biliteracy data to inform curriculum and instructional programming</li></ul></h4>
+      </div>
+    </div>
+
+    <div class="districts">
+      <img src="https://i.postimg.cc/G29CyKmr/Screenshot-2023-09-11-at-10-37-13-AM-removebg-preview.png">
+      <div class="d-details">
+        <h3>Wildwood City School District</h3>
+        <h4>Contact: Josepha Penrose<br>Email: jpenrose@wwschools.org<br>Offers assistance with:<br><ul><li>Multilingual learner participation</li><li>Administering assessments and/or multiple assessments</li></ul></h4>
+      </div>
+    </div>
+
+    <div class="districts">
+            <img src="https://i.postimg.cc/G29CyKmr/Screenshot-2023-09-11-at-10-37-13-AM-removebg-preview.png">
+            <div class="d-details">
+              <h3>Woodbury City Public Schools</h3>
+              <h4>Contact: Vince Gravina<br>Email: vgravina@woodburysch.com<br>Offers assistance with:<br><ul> <li>Equitable access</li></ul></h4>
+            </div>
+    </div>
+                      
+
+
+   
+   
+</section>
+</div>
+
+
+          
+  <div id="map">
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCT_yQphTiVR0xBaesyV6hwi-61Hp5BYQk&libraries=places&callback=initMap"></script>
+  </div>
+  
+  
+</div>
+
+
+
+  <footer>
+    <p>New Jersey Seal of Biliteracy Project | Copyright © 2023 | Data last updated: August 2023</p>
+  </footer>
+</body>
+
+</html>

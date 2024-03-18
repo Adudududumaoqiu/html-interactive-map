@@ -1,0 +1,221 @@
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 50px 50px 0 50px;
+  background-color: #fefefe;
+  display: flex;
+  flex-direction: column;
+  min-height: 95vh;
+}
+.logo {
+  width: 100%; 
+  height: auto; 
+}
+
+.main {
+  flex: 1;
+  font-size: 1.2rem;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+footer {
+  text-align: right;
+  color: midnightblue;
+}
+
+.tile-image {
+  height: 200px;
+  float: left;
+  margin-right: 50px;
+  margin-bottom: 50px;
+}
+
+.card {
+  width: 50%;
+}
+
+
+.creative {
+  color: rgb(12, 12, 12);
+}
+
+.card-text {
+  font-size: 1rem;
+}
+
+.right, .left {
+  float: left; /* Adjusted for both .right and .left */
+}
+
+@media (max-width: 680px) {
+  .logo {
+    width: 100px;
+  }
+
+  .card {
+    width: 100%;
+    display: block;
+    margin-bottom: 30px;
+    text-align: justify;
+  }
+
+  .card img {
+    width: 100%;
+    height: 100%;
+    display: inline;
+    object-fit: cover;
+  }
+
+  .content-wrapper {
+    flex-direction: column;
+  }
+
+  .left-content, .right-content, #map {
+    width: 100%;
+    height: auto; /* Adjusted height for #map */
+  }
+}
+
+.content-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.left-content {
+  flex: 1;
+}
+
+#map {
+  width: 66%;
+  height: 1100px; /* Unified height */
+  border: 1px solid #ccc;
+  margin-right: 10px;
+  margin-top: 30px;
+}
+
+.how-to-use {
+  width: 90%; 
+  max-width: 350px;
+  min-width: 200px;
+  font-size: 16px;
+}
+
+.container {
+  width: 575px;
+  height: 750px;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.06);
+  padding: 20px;
+  overflow-y: scroll;
+  max-width: 350px; 
+}
+
+.highlight {
+  background-color: yellow;
+  font-weight: bold;
+}
+
+.container::-webkit-scrollbar {
+  display: none;
+}
+
+.container form {
+  width: 100%;
+  border: 1px solid rgb(82, 74, 235);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+}
+
+.container form input {
+  border: none;
+  outline: none;
+  box-shadow: none;
+  width: 100%;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 8px 10px;
+}
+
+.container form i {
+  padding-left: 10px;
+}
+
+#assistancelist {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#assistancelist ul {
+  flex: 1;
+  margin-right: 20px; 
+}
+
+#assistancelist img {
+  max-width: 500px;
+  height: auto;
+}
+
+.districts-list {
+  padding: 20px 0;
+}
+
+.districts {
+  display: flex;
+  align-items: start;
+  cursor: pointer;
+  padding-bottom: 15px;
+  font-size: 16px；
+}
+
+.districts img {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.districts .d-details {
+  padding-left: 15px;
+}
+
+.districts .d-details h3 {
+  font-size: 18px;
+  color: #1d1d1d;
+}
+
+.districts .d-details h4 {
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.map-instructions-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 20px;
+}
+
+#button {
+  margin-top: 50px;
+  height: 50px;
+  border-radius: 50%;
+  width: 30px;
+  background-color: rgb(235, 157, 79);
+  font-size: 10px;
+  color: rgb(28, 25, 25);
+  padding: 5px 28px;
+  text-align: center;
+  margin-left: 600px;
+}
+
+#autocomplete {
+  width: 50%;
+  height: 30px;
+  padding: 10px;
+}
